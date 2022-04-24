@@ -16,9 +16,7 @@ function forecast() {
     .then(data => console.log(data))
     // .then(
     //     data => {
-
-    // })
-        
+    // })   
     }
 
 function informationfunction() {
@@ -39,6 +37,7 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=
     console.log(weatherValue);
     console.log(windValue);
     renderFetch();
+    recentStorage();
 })
     
 }
@@ -51,10 +50,6 @@ var listTemp = document.querySelector("#temp");
 var listHum = document.querySelector("#hum");
 var listWind = document.querySelector("#wind");
 
-var recent1;
-var recent2;
-var recent3;
-
 function renderFetch(){
     
     $('#currentCity').html(cityName);
@@ -65,6 +60,18 @@ function renderFetch(){
     
 }
 
+var recentC;
+var recent1 = document.querySelector("#rc1");
+var recent2 = document.querySelector("#rc2");
+var recent3 = document.querySelector("#rc2");
+
 function recentStorage(){
-    localStorage.setItem("recent1", cityName)
+    recentC = cityName;
+    localStorage.setItem("recent1", recentC);
+    var lastC1 = (localStorage.getItem("recent1"));
+    recent1.textContent = lastC1;
+
+    var lastC2 = (localStorage.getItem("recent1"));
+    localStorage.setItem("recent2",lastC2);
+        
 }

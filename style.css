@@ -72,6 +72,10 @@ header h1{
     background-color: var(--maincolor);
   }
 
+  .one li {
+    font-size: 3rem;
+  }
+
   .one button:hover  {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: var(--maincolor3);
@@ -183,10 +187,15 @@ header h1{
       border-radius: 1rem;
 }
 
-.card p, h4 {
+.card h4 {
   font-size: 1.5rem;
   margin-left: 0.7rem;
-  margin-bottom: 0.7rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
+  margin-bottom: 3rem;
 }
 
 /* On mouse-over, add a deeper shadow */
