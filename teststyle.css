@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(13, 2, 115), rgb(0, 170, 255));
+    height: 7rem;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#maindiv {
+    width: 100%;
+}
+
+#sidebar {
+    background-image: linear-gradient(rgb(163, 227, 246), rgb(150, 148, 249));
+    border-radius: 1rem;
+}
+
+#sidebar h3, input, button, li {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#maindisplay {
+    display: grid;
+    margin-left: 1rem;
+    background-image: linear-gradient(rgb(163, 227, 246), rgb(150, 148, 249));
+    border-radius: 1rem;
+}
+
+#maindisplay h2{
+    font-size: 2rem;
+}
+
+#maindisplay .col {
+    height: 2rem;
+}
+
+#icon {
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem;
+}
+
+.card {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#forecast {
+    display: grid;
+}
+
+#forecasttext {
+    width: 90%;
+    justify-self: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+}

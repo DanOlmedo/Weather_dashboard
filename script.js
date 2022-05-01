@@ -63,15 +63,32 @@ function renderFetch(){
 var recentC;
 var recent1 = document.querySelector("#rc1");
 var recent2 = document.querySelector("#rc2");
-var recent3 = document.querySelector("#rc2");
+var recent3 = document.querySelector("#rc3");
 
 function recentStorage(){
     recentC = cityName;
     localStorage.setItem("recent1", recentC);
     var lastC1 = (localStorage.getItem("recent1"));
     recent1.textContent = lastC1;
+}
 
+function recentStorage2(){
+    recentC2 = localStorage.getItem("recent1");
+    localStorage.setItem("recent2", recentC2);
     var lastC2 = (localStorage.getItem("recent1"));
-    localStorage.setItem("recent2",lastC2);
-        
+    recent2.textContent = lastC2;
+
+}
+
+function recentStorage3(){
+    recentC3 = localStorage.getItem("recent2");
+    localStorage.setItem("recent3", recentC3);
+    var lastC3 = (localStorage.getItem("recent2"));
+    recent3.textContent = lastC3;
+}
+
+function recentDisplay(){
+    
+    recentStorage2();
+    recentStorage3();
 }
