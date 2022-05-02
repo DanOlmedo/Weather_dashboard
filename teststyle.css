@@ -38,6 +38,13 @@ header h1 {
     background-color: azure;
 }
 
+#r2btn, #r3btn {
+    font-size: 1rem;
+    width: 100%;
+    border-radius:0.5rem;
+    background-color: azure;
+}
+
 #maindisplay {
     display: grid;
     margin-left: 1rem;
