@@ -92,4 +92,4 @@ var recent3button = document.querySelector('#r3btn');
 recent2button.addEventListener('click',getFromRecent2);
 recent3button.addEventListener('click',getFromRecent3);
 
-alert("Hello grader, I am sorry, I think I can not access the weekly functionality for the API because it requires payment");
+alert("Hello grader, I am sorry, I think I can not access the weekly functionality for the API because it requires payment, I did the best i could without it :)");
